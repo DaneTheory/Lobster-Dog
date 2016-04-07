@@ -1,0 +1,341 @@
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, em, img, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, select, button, table, caption, thead, tbody, tfoot, tr, th, td { border: none; font-size: 100%; margin: 0; outline: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, audio, canvas, video { display: block; }
+h1, h2, h3, h4, h5, h6 { line-height: normal; font-weight: normal; }
+address, cite, code, em, strong { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+input, textarea, select, button { display: block; resize: none; }
+html { height: 100%; }
+
+/* clearfixes */
+.clear:after,
+ul:after { clear: both; content: ""; display: block; height: 0; visibility: hidden; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#test, #test2, #test3, #test4, #test5 {
+  margin: 0.6em 0;
+}
+
+/* Globals */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* styles */
+.wrapper {
+	margin: 25px auto;
+	max-width: 1024px;
+	position: relative;
+	width: 93.75%;
+}
+
+.example {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.example img {
+  width: 100%;
+}
+
+/* Put your solution BELOW
+===========================*/
+
+/* Non-Essential For This Challenge, Snazzy Stylins' */
+h2.version--title {
+  display: inline-block;
+  margin-top: 2em;
+  font-family: 'Arvo', serif;
+  font-size: 2em;
+  color: #003F7F;
+  text-transform: uppercase;
+}
+
+h6.version--caption {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.85em;
+  color: #198AFF;
+  text-transform: capitalize;
+  border-top: 1px solid rgba(63, 63, 63, 0.45);
+  line-height: 1.5;
+}
+
+
+
+/* VERSION ONE */
+#test ul {
+    display: flex;
+}
+
+#test li {
+    position: relative;
+    border: 1px solid red;
+}
+
+#test li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test img {
+    display: block;
+    width: 100%;
+}
+
+/* VERSION ONE */
+#test ul {
+    display: flex;
+}
+
+#test li {
+    position: relative;
+    border: 1px solid red;
+}
+
+#test li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test img {
+    display: block;
+    width: 100%;
+}
+
+
+/* VERSION TWO */
+#test2 li {
+  position: relative;
+  display: table-cell;
+  border: 1px solid red;
+}
+
+#test2 li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test2 img {
+  display: list-item;
+  width: 100%;
+}
+
+
+/* VERSION THREE */
+#test3 ul {
+    font-size: 0;
+}
+
+#test3 li {
+    position: relative;
+    border: 1px solid red;
+    display: table-cell;
+}
+
+#test3 li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test3 img {
+    width: 100%;
+}
+
+
+/* VERSION FOUR */
+#test4 li {
+  position: relative;
+  float: left;
+  width: 20%;
+}
+
+#test4 li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test4 img {
+  float: left;
+  width: 100%;
+  border: 1px solid red;
+}
+
+
+/* VERSION FIVE */
+#test5 ul {
+    display: flex;
+}
+
+#test5 li {
+    position: relative;
+    border: 1px solid red;
+}
+
+#test5 li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+#test5 img {
+    display: block;
+    width: 100%;
+}
+
+#test5 button {
+    display: inline-block;
+}
+
+
+/* Stylins' For Version 5's Extra DOM Els */
+.version--context {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.version--context button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 25px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(25, 138, 255, 0.5) 51%, #198aff 100%);
+    background-size: 200% 200%;
+    border: 1px solid #003F7F;
+    outline: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    color: #198AFF;
+    transition: background-position 225ms ease-in 300ms;
+}
+
+.version--context button::before, .version--context button::after {
+  content: '';
+  height: 50%;
+  width: 1px;
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  transition: transform 225ms linear 300ms;
+}
+
+.version--context button::before {
+  bottom: 0;
+  left: -1px;
+}
+
+.version--context button::after {
+  top: 0;
+  right: -1px;
+}
+
+.version--context span {
+  position: relative;
+  overflow: hidden;
+  transition: color 0s linear 400ms;
+}
+
+.version--context span::after {
+  content: 'Turn Up To Eleven';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #19ff8e;
+  display: block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 200ms linear 400ms, opacity 0s linear 475ms;
+}
+
+.version--context button:hover, .version--context button:focus {
+  background-position: 0% 200%;
+  cursor: pointer;
+}
+
+.version--context button:hover::before, .version--context button:focus::before {
+  transform: translateY(105%);
+}
+
+.version--context button:hover::after, .version--context button:focus::after {
+  transform: translateY(-105%);
+}
+
+.version--context button:hover span, .version--context button:focus span {
+  color: #FFFFFF;
+}
+
+.version--context button:hover span::after, .version--context button:focus span::after {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 200ms linear 0s, opacity 0s linear 500ms;
+}
+
+
+
+/* Media Queries, Cuz Why Not? */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 500px){
+
+    h2.version--title {
+      font-size: 1.75em;
+      text-align: center;
+      display: block;
+    }
+
+    h6.version--caption {
+      font-size: 0.75em;
+      text-align: center;
+    }
+
+}
