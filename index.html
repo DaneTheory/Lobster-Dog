@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="">
+	<meta name="description" content="The cutest CSS test ever created!">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fonts For A Little Extra Goodness -->
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="static/css/base.css">
+
+	<title>CORGI LOBSTER</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+    <p>Please use CSS to make the elements located in the div with id=text to like the image below:</p>
+
+    <div class="example"><img alt="Lobster Dog solution" src="static/img/example.jpg"/></div>
+
+    <p>The html structure is done for you already. If you would like to add additional DOM elements, you can, but know that the image below was built using exactly the DOM structure that I have provided.</p>
+
+    <p>What you don't see from the image, is that the elements are responsive relative to its containing wrapper. Your implementation needs to be responsive as well so that the 5 images stay inline and shrink and grow as a unit.</p>
+
+    <p>The images need to be inline, and each be 1/5th of the wrapper. The inner border is 80% of its image size.</p>
+		<br>
+
+		<!-- VERSION 1 Block -->
+		<h2 class="version--title">Version 1</h2>
+		<h6 class="version--caption">A CSS friendly approach. No manipulation to the orignal HTML structure.</h6>
+
+    <div id="test">
+			<ul>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+			</ul>
+		</div>
+		<!-- Block End -->
+
+		<!-- VERSION 2 Block -->
+		<h2 class="version--title">Version 2</h2>
+		<h6 class="version--caption">Worried about flexbox support? Here's an old school CSS approach.</h6>
+
+		<div id="test2">
+			<ul>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+			</ul>
+		</div>
+		<!-- Block End -->
+
+		<!-- VERSION 3 Block -->
+		<h2 class="version--title">Version 3</h2>
+		<h6 class="version--caption">T-Cells with LI styles feels dirty. Changing font size is a better solution.</h6>
+
+		<div id="test3">
+			<ul>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+			</ul>
+		</div>
+		<!-- Block End -->
+
+		<!-- VERSION 4 Block -->
+		<h2 class="version--title">Version 4</h2>
+		<h6 class="version--caption">No CSS voodoo here, just classic floats. Who doesn't love the classics?</h6>
+
+		<div id="test4">
+			<ul>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+				<li><img alt="Lobster Dog" src="static/img/lobster-dog.jpg"/></li>
+			</ul>
+		</div>
+		<!-- Block End -->
+
+		<!-- VERSION 5 Block -->
+		<h2 class="version--title">Version 5</h2>
+		<h6 class="version--caption">Now let's have some fun. Pretend this is going live. We'll use everything but the kitchen sink to make it production ready!</h6>
+			<div class="version--context">
+				<button type="button" onclick="location.href='optimizedVer.html';">
+					<span>Turn Up To Eleven</span>
+				</button>
+			</div>
+		<!-- Block End -->
+
+
+
+	</div>
+
+</body>
+
+</html>
